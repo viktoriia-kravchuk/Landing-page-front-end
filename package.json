@@ -1,0 +1,38 @@
+{
+  "name": "recruitment-front-end",
+  "version": "1.0.0",
+  "description": "recruitment task",
+  "main": "index.js",
+  "scripts": {
+    "webpack:build": "cross-env NODE_ENV=production webpack  --config webpack.config.js --progress --profile --mode=production",
+    "webpack:dev": "cross-env NODE_ENV=dev webpack-dev-server --config webpack.config.js --mode=development ",
+    "build": "npm run webpack:build",
+    "dev": "npm run webpack:dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-error-notification-plugin": "^1.0.3"
+  },
+  "dependencies": {
+    "@babel/node": "^7.20.7",
+    "babel-loader": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "module-not-found-error": "^1.0.1",
+    "sass": "^1.57.1",
+    "scss-reset": "^1.2.2"
+  }
+}
