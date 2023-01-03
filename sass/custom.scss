@@ -105,6 +105,25 @@ ul {
       color: $c-blue;
     }
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $c-dark-blue;
+    font-weight: $fw-semibold;
+    margin-bottom: 1.2rem;
+  }
+  
+  h1 {
+    font-size: 3.6rem;
+    line-height: 1.28;
+    @include breakpoint(desktop) {
+      font-size: 6rem;
+    }
+  }
   
 /* resusable classes */
 .container {
@@ -301,10 +320,9 @@ ul {
 
 // .hero styles
 .hero {
-    padding: 10rem 0 5rem 0;
+    margin: 0px 120px 0 162px;
     display: flex;
-    // background-image: url("/assets/img/1.jpeg") no-repeat;
-
+    //background: url("/assets/img/1.jpeg") no-repeat;
     // background-size: cover;
     // background-position: center center;
     position: relative;
@@ -313,7 +331,6 @@ ul {
       height: 60rem;
     }
     @include breakpoint(desktop) {
-      padding-top: 22.6rem;
       height: 79.6rem;
       &:after {
         content: '';
@@ -328,6 +345,7 @@ ul {
     &__container {
       display: flex;
       flex-direction: column;
+      padding: 0px;
       @include breakpoint(desktop) {
         flex-direction: row;
       }
@@ -355,6 +373,7 @@ ul {
     &__subtitle {
       max-width: 459px;
       margin: 0 auto 2.6rem auto;
+      color: $c-light-grey;
       @include breakpoint(desktop) {
         margin: 0 0 5.2rem 0;
       }
@@ -368,5 +387,11 @@ ul {
       @include breakpoint(tablet) {
         width: auto;
       }
+    }
+
+    &__wrapper{
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
   }
