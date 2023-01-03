@@ -176,6 +176,7 @@ ul {
   }
   // .header styles
 .header {
+  background-color: $c-body;
     position: fixed;
     width: 100%;
     padding: 2.4rem 0;
@@ -297,3 +298,75 @@ ul {
 .grey{
     color: $c-light-grey;
 }
+
+// .hero styles
+.hero {
+    padding: 10rem 0 5rem 0;
+    display: flex;
+    // background-image: url("/sass/assets/img/1.jpeg") no-repeat;
+
+    // background-size: cover;
+    // background-position: center center;
+    position: relative;
+    z-index: 1;
+    @include breakpoint(tablet) {
+      height: 60rem;
+    }
+    @include breakpoint(desktop) {
+      padding-top: 22.6rem;
+      height: 79.6rem;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 123.4rem;
+        // background: url('assets/img/model.svg') no-repeat;
+        top: 0;
+        z-index: -1;
+      }
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint(desktop) {
+        flex-direction: row;
+      }
+    }
+    &__left,
+    &__right {
+      flex: 1;
+    }
+    &__left {
+      text-align: center;
+      @include breakpoint(desktop) {
+        text-align: left;
+      }
+    }
+    &__right {
+      display: none;
+      @include breakpoint(tablet) {
+        display: flex;
+        justify-content: end;
+      }
+      @include breakpoint(desktop) {
+        display: flex;
+      }
+    }
+    &__subtitle {
+      max-width: 459px;
+      margin: 0 auto 2.6rem auto;
+      @include breakpoint(desktop) {
+        margin: 0 0 5.2rem 0;
+      }
+    }
+    &__btn {
+      width: 100%;
+      margin-bottom: 1.4rem;
+      &:nth-of-type(1) {
+        margin-right: 2rem;
+      }
+      @include breakpoint(tablet) {
+        width: auto;
+      }
+    }
+  }
