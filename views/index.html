@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viktoriia Kravchuk</title>
-    <link
-    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-    rel="stylesheet"
-  />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__container container">
-        <div class="header__wrapper">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viktoriia Kravchuk</title>
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__wrapper">
         <div class="header__logo">Logo</div>
 
         <!-- nav starts -->
@@ -32,8 +31,8 @@
           </ul>
         </nav>
       </div>
-        <!-- nav ends -->
-        <div class="header__wrapper header__right" >
+      <!-- nav ends -->
+      <div class="header__wrapper header__right">
         <div class="header__info-container">
           <div class="grey">Call us: <span class="blue">+48 123 456 789</span></div>
           <div>EN <i class='bx bx-chevron-down header__arrow'></i> </div>
@@ -46,31 +45,66 @@
       <div class="header__nav-trigger">
         <i class="bx bx-menu"></i>
       </div>
+    </div>
+  </header>
+  <section class="hero">
+    <!-- <div class="hero__container container"> -->
+      <!-- <div class="hero__left"> -->
+        <div class="hero__title">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p class="hero__subtitle subtitle">
+          Nulla eu venenatis nisi, vitae posuere eros. Duis mi erat, mollis vitae porttitor in, bibendum blandit justo.
+          Mauris facilisis nulla sit amet orci tempor sodales.
+          Donec pharetra quam et neque vehicula aliquet. 
       </div>
-    </header>
-    <section class="hero">
-      <div class="hero__container container">
-        <div class="hero__left">
-          <h1 class="hero__title">Lorem ipsum dolor sit amet</h1>
-          <p class="hero__subtitle subtitle">
-            Nulla eu venenatis nisi, vitae posuere eros. Duis mi erat, mollis vitae porttitor in, bibendum blandit justo.
-            Mauris facilisis nulla sit amet orci tempor sodales.
-          </p>
-          <div class="hero__wrapper">
-            <button class="hero__button">
-                <!-- <img src="/assets/img/1.jpeg" alt="play"> -->
-                <div class="line"></div>
-            </button>
-            <p><span>Watch</span> demo video</p>
-        </div>
-        </div>
-        <div class="hero__right">
-          <div class="hero__img">
-            <!-- <img src="/assets/img/1.jpeg" alt="" /> -->
-          </div>
-        </div>
-      </div>
-    </section>
 
-  </body>
+        <div class="hero__wrapper">
+          <button class="hero__btn">
+            <img src="/assets/img/button.jpeg" alt="play">
+          </button>
+          <div class="hero__line"></div>
+          <p class="hero__button_text"><span>Watch</span> demo video</p>
+        </div>
+
+        <div class="hero__figures figure-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="390" height="280" viewBox="0 0 390 280">
+            <defs>
+              <pattern id="img1" patternUnits="userSpaceOnUse" width="370" height="270">
+                <image href="/assets/img/1.jpeg" x="0" y="0" width="370" height="270" />
+              </pattern>
+            </defs>
+
+              <path id="Rectangle_1" data-name="Rectangle 1"
+                d="M59,0H389V208a58.946,58.946,0,0,1-59,59H59A58.946,58.946,0,0,1,0,208V59A58.946,58.946,0,0,1,59,0Z"
+                fill="url(#img1)" />
+          </svg>
+        </div>
+        <div class="hero__figures figure-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="330" height="390" viewBox="0 0 330 390">
+            <defs>
+              <pattern id="img2" patternUnits="userSpaceOnUse" width="307" height="315">
+                <image href="/assets/img/33.jpeg" x="0" y="0" width="307" height="315" />
+              </pattern>
+            </defs>
+              <path id="Rectangle_2" data-name="Rectangle 2"
+                d="M70,0H237a69.936,69.936,0,0,1,70,70V390H70A69.936,69.936,0,0,1,0,320V70A69.936,69.936,0,0,1,70,0Z"
+                fill="url(#img2)" />
+          </svg>
+        </div>
+        <div class="hero__figures figure-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="470" height="320" viewBox="0 0 470 320">
+            <defs>
+              <pattern id="img3" patternUnits="userSpaceOnUse" width="427" height="299">
+                <image href="/assets/img/4.jpeg" x="0" y="0" width="427" height="299" />
+              </pattern>
+            </defs>
+            <path id="Rectangle_3" data-name="Rectangle 3"
+            d="M70,0H400a69.936,69.936,0,0,1,70,70V229a69.936,69.936,0,0,1-70,70H0V70A69.936,69.936,0,0,1,70,0Z"
+            fill="url(#img3)" />
+          </svg>
+        </div>
+  </section>
+
+</body>
+
 </html>
