@@ -1,6 +1,9 @@
 
 # Front-end recruitment task
 
+## Github pages link
+[OPEN](https://viktoriia-kravchuk.github.io/recruitment-front-end/)
+
 Your task is to create fully responsive part of website. All files are included in Instruction files folder. For desktop please do as in preview/photoshop file "pixel perfect", but for mobile it is your imagination, do it as you think :)
 
 ## How to start
