@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div class="backdrop"></div>
   <header class="header">
     <div class="header__container container">
       <div class="header__wrapper">
@@ -48,63 +49,132 @@
     </div>
   </header>
   <section class="hero">
-    <!-- <div class="hero__container container"> -->
-      <!-- <div class="hero__left"> -->
-        <div class="hero__title">
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p class="hero__subtitle subtitle">
-          Nulla eu venenatis nisi, vitae posuere eros. Duis mi erat, mollis vitae porttitor in, bibendum blandit justo.
-          Mauris facilisis nulla sit amet orci tempor sodales.
-          Donec pharetra quam et neque vehicula aliquet. 
-      </div>
+    <div class="hero__title">
+      <h1>Lorem ipsum dolor sit amet</h1>
+      <p class="hero__subtitle subtitle">
+        Nulla eu venenatis nisi, vitae posuere eros. Duis mi erat, mollis vitae porttitor in, bibendum blandit justo.
+        Mauris facilisis nulla sit amet orci tempor sodales.
+        Donec pharetra quam et neque vehicula aliquet.
+    </div>
 
-        <div class="hero__wrapper">
-          <button class="hero__btn">
-            <img src="/assets/img/button.jpeg" alt="play">
-          </button>
-          <div class="hero__line"></div>
-          <p class="hero__button_text"><span>Watch</span> demo video</p>
-        </div>
+    <div class="hero__wrapper">
+      <button class="hero__btn">
+        <img src="/assets/img/button.jpeg" alt="play">
+      </button>
+      <div class="hero__line"></div>
+      <p class="hero__button_text"><span>Watch</span> demo video</p>
+    </div>
 
-        <div class="hero__figures figure-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="390" height="280" viewBox="0 0 390 280">
-            <defs>
-              <pattern id="img1" patternUnits="userSpaceOnUse" width="370" height="270">
-                <image href="/assets/img/1.jpeg" x="0" y="0" width="370" height="270" />
-              </pattern>
-            </defs>
+    <div class="hero__figures figure-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="390" height="280" viewBox="0 0 390 280">
+        <defs>
+          <pattern id="img1" patternUnits="userSpaceOnUse" width="370" height="270">
+            <image href="/assets/img/1.jpeg" x="0" y="0" width="370" height="270" />
+          </pattern>
+        </defs>
 
-              <path id="Rectangle_1" data-name="Rectangle 1"
-                d="M59,0H389V208a58.946,58.946,0,0,1-59,59H59A58.946,58.946,0,0,1,0,208V59A58.946,58.946,0,0,1,59,0Z"
-                fill="url(#img1)" />
-          </svg>
-        </div>
-        <div class="hero__figures figure-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="330" height="390" viewBox="0 0 330 390">
-            <defs>
-              <pattern id="img2" patternUnits="userSpaceOnUse" width="307" height="315">
-                <image href="/assets/img/33.jpeg" x="0" y="0" width="307" height="315" />
-              </pattern>
-            </defs>
-              <path id="Rectangle_2" data-name="Rectangle 2"
-                d="M70,0H237a69.936,69.936,0,0,1,70,70V390H70A69.936,69.936,0,0,1,0,320V70A69.936,69.936,0,0,1,70,0Z"
-                fill="url(#img2)" />
-          </svg>
-        </div>
-        <div class="hero__figures figure-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="470" height="320" viewBox="0 0 470 320">
-            <defs>
-              <pattern id="img3" patternUnits="userSpaceOnUse" width="427" height="299">
-                <image href="/assets/img/4.jpeg" x="0" y="0" width="427" height="299" />
-              </pattern>
-            </defs>
-            <path id="Rectangle_3" data-name="Rectangle 3"
-            d="M70,0H400a69.936,69.936,0,0,1,70,70V229a69.936,69.936,0,0,1-70,70H0V70A69.936,69.936,0,0,1,70,0Z"
-            fill="url(#img3)" />
-          </svg>
-        </div>
+        <path id="Rectangle_1" data-name="Rectangle 1"
+          d="M59,0H389V208a58.946,58.946,0,0,1-59,59H59A58.946,58.946,0,0,1,0,208V59A58.946,58.946,0,0,1,59,0Z"
+          fill="url(#img1)" />
+      </svg>
+    </div>
+    <div class="hero__figures figure-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="330" height="390" viewBox="0 0 330 390">
+        <defs>
+          <pattern id="img2" patternUnits="userSpaceOnUse" width="307" height="315">
+            <image href="/assets/img/33.jpeg" x="0" y="0" width="307" height="315" />
+          </pattern>
+        </defs>
+        <path id="Rectangle_2" data-name="Rectangle 2"
+          d="M70,0H237a69.936,69.936,0,0,1,70,70V390H70A69.936,69.936,0,0,1,0,320V70A69.936,69.936,0,0,1,70,0Z"
+          fill="url(#img2)" />
+      </svg>
+    </div>
+    <div class="hero__figures figure-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="470" height="320" viewBox="0 0 470 320">
+        <defs>
+          <pattern id="img3" patternUnits="userSpaceOnUse" width="427" height="299">
+            <image href="/assets/img/4.jpeg" x="0" y="0" width="427" height="299" />
+          </pattern>
+        </defs>
+        <path id="Rectangle_3" data-name="Rectangle 3"
+          d="M70,0H400a69.936,69.936,0,0,1,70,70V229a69.936,69.936,0,0,1-70,70H0V70A69.936,69.936,0,0,1,70,0Z"
+          fill="url(#img3)" />
+      </svg>
+    </div>
+    <img class="background_figure_1" src="/assets/img/figure_1.jpeg" />
   </section>
 
-</body>
+  <section class="blog">
+    <img class="blog__figure_title" src="/assets/img/circle_figure.jpeg" alt="blog_figure">
+    <div class="blog__title">
+      <h3>our blog</h3>
+      <h2>Lorem ipsum dolor</h2>
+    </div>
+    <div class="blog__elements">
+      <div class="blog__elements__element dark">
+        <div class="light_text">
+          <h3 class="name">Frank Lampard</h3>
+          <p class="date">20 Jan, 2023</p>
+        </div>
+        <p class="text">Lorem ipsum dolor sit amet, consectur</p>
+        <button><span>M</span>ore</button>
+        <div class="circle_figure"></div>
+      </div>
+      <div class="blog__elements__element">
+        <div class="light">
+          <div class="circle_pic">
+            <img src="/assets/img/profile1.jpeg" />
+          </div>
+          <div>
+            <h3 class="name">Paul Scholes</h3>
+            <p class="date">15 Jan, 2023</p>
+          </div>
+        </div>
+        <hr>
+        <div class="text">
+          <p class="text__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="text__desc">Donec pharetra quam et neque vehicula aliquet. Duis placerat ut metus et
+            sagittis.Curabitur convallis gravida.</p>
+        </div>
+        <button><a href="#">Read more</a></button>
+      </div>
+      <div class="blog__elements__element">
+        <div class="light">
+          <div class="circle_pic">
+            <img src="/assets/img/profile3.jpeg" />
+          </div>
+          <div>
+            <h3 class="name">Harry Kane</h3>
+            <p class="date">15 Jan, 2023</p>
+          </div>
+        </div>
+        <hr>
+        <div class="text">
+          <p class="text__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="text__desc">Donec pharetra quam et neque vehicula aliquet. Duis placerat ut metus et
+            sagittis.Curabitur convallis gravida.</p>
+        </div>
+        <button><a href="#">Read more</a></button>
+      </div>
+      <img class="blog__background_figure" src="/assets/img/figure.jpeg" alt="ellipse">
+    </div>
+  </section>
 
+  <div id="modal">
+    <div class="modal__wrapper">
+      <div class="iframe-container">
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/Y2NkuFIlLEo" title="video" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <div class="close_modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+          style="fill: rgba(0, 0, 0, 1);">
+          <path
+            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+          </path>
+        </svg>
+      </div>
+</body>
 </html>
